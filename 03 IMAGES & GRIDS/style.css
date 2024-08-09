@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: Arial;
+    margin:0;
+    padding:0;
+    font-family: Raleway;
+}
+
+body{
+    background-image:url('./assets/flow.jpg');
+    background-size:cover;
+}
+
+h1{
+    color:hotpink;
+    font-weight:100;
+}
+
+.page{
+    position:fixed;
+    width: 100vw;
+    height:100vh;
+    overflow:hidden;
+    display:grid;
+    place-items:center;
+    left:-100vw;
+}
+
+.visible{
+    left:0;
+}
+
+.box{
+    position:relative;
+    width:80%;
+    height:80%;
+    display:grid;
+    place-items:center;    
+    border:1px solid lightgray;
+    padding:2rem;
+    background-color:rgba(255, 255, 255, .8);
+    border-radius: 1rem;
+}
+
+.box#background-image{
+    background-image:url('./assets/flow.jpg');
+    background-size:cover;
+    color:white;
+    font-size:4rem;
+}
+
+.box.imagebox{
+    grid-template-columns: 1fr 1fr;
+}
+
+.fixed{
+    position:fixed;
+    right:2rem;
+    bottom:2rem;
+}
+.absolute{
+    position:absolute;
+    right:2rem;
+    top:2rem;
+}
+
