@@ -2,30 +2,45 @@
 
 *{
     box-sizing: border-box;
-    font-family: Arial;
+    font-family: Raleway;
     margin:0;
     padding:0;
     font-family: Raleway;
 }
 
 h1{
-    color:hotpink;
-    font-weight:100;
+    color: hotpink; /* Giver alle <h1>-elementer en hotpink (lys pink) tekstfarve */
+    font-weight: 100; /* Sætter tyngden af skriften i <h1> til 100, hvilket er meget tynd skrift */
 }
 
 .page{
-    position:fixed;
-    width: 100vw;
-    height:100vh;
-    overflow:hidden;
-    display:grid;
-    place-items:center;
-    left:-100vw;
+    position: fixed; /* Fikserer .page-elementet i forhold til vinduet, så det forbliver på samme position, selv når man scroller */
+    width: 100vw; /* Sætter bredden af .page-elementet til 100% af viewportens bredde (hele bredden af browser-vinduet) */
+    height: 100vh; /* Sætter højden af .page-elementet til 100% af viewportens højde (hele højden af browser-vinduet) */
+    overflow: hidden; /* Skjuler alt indhold, der rækker ud over .page-elementets grænser */
+    display: grid; /* Indstiller .page-elementet som en grid-container, så dens børn kan placeres i et gitter */
+    place-items: center; /* Centrerer alle børn af .page-elementet både vandret og lodret i gitteret */
+    left: -100vw; /* Flytter .page-elementet uden for skærmen mod venstre, lige så langt som skærmens bredde (100% af viewportens bredde) */
+    transition: all 1s ease-in-out;
 }
-
 .visible{
     left:0;
 }
+
+
+/* Unikke baggrundsfarver for hver side */
+#page1 {
+    background-color: lightblue; /* Side 1 baggrundsfarve */
+}
+
+#page2 {
+    background-color: lightseagreen; /* Side 2 baggrundsfarve */
+}
+
+#page3 {
+    background-color: lightgoldenrodyellow; /* Side 3 baggrundsfarve */
+}
+
 
 .box{
     position:relative;
@@ -33,7 +48,7 @@ h1{
     height:80%;
     display:grid;
     place-items:center;    
-    border:1px solid lightgray;
+    border:1px solid whitesmoke;
     padding:2rem;
 }
 
